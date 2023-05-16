@@ -24,6 +24,22 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
     <title>PROJE ÖDEVİ!</title>
+    <style>
+      .vid{
+        display: block !important;
+      }
+      .banner-img{
+        display: none !important;
+      }
+      @media only screen and (max-width: 991px) {
+        .vid{
+        display: none !important;
+      }
+      .banner-img{
+        display: block !important;
+      }
+      }
+    </style>
   </head>
   <body>
     <header id="header">
@@ -108,9 +124,10 @@
   >
     <div class="carousel-inner animate__animated animate__backInRight">
       <div class="carousel-item active">
-          <video class="d-block w-100 " autoplay="autoplay" loop="loop" muted="muted"  playsinline="">
+          <video class="d-block w-100 vid" autoplay="autoplay" loop="loop" muted="muted"  playsinline="">
               <source src="./img/web-banner.mp4" type="video/mp4">
           </video>
+          <img class="d-block w-100 banner-img" src="./img/spot-banner-home.jpg"  />
           <div class="carousel-caption d-none d-md-block">
               <h1>GELECEĞİ İNŞA EDERİZ</h1>
               <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
